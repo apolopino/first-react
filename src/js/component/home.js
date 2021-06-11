@@ -22,31 +22,21 @@ export function Home() {
 				<div className="row">
 					<div className="col-md-3">
 						<Card
-							titulo="Titulo 1"
-							buttonText="Texto1"
-							image="https://i.stack.imgur.com/y9DpT.jpg"
-							content=""
+							titulo="Card 1"
+							buttonText="Boton 1"
+							image="https://garajedelrock.com/wp-content/uploads/2020/05/serj-tankian.jpg"
+							content="Los elementos de las card están siendo entregados a través de props. Si no se entrega, cae a un contenido default"
+							url="https://getbootstrap.com/docs/4.0/components/card/"
 						/>
 					</div>
 					<div className="col-md-3">
-						<Card
-							titulo="Titulo 1"
-							buttonText="Texto2"
-							image="https://i.stack.imgur.com/y9DpT.jpg"
-						/>
+						<Card />
 					</div>
 					<div className="col-md-3">
-						<Card
-							titulo="Titulo 1"
-							buttonText="Texto3"
-							image="https://i.stack.imgur.com/y9DpT.jpg"
-						/>
+						<Card />
 					</div>
 					<div className="col-md-3">
-						<Card
-							buttonText="Texto4"
-							image="https://i.stack.imgur.com/y9DpT.jpg"
-						/>
+						<Card />
 					</div>
 				</div>
 			</div>
