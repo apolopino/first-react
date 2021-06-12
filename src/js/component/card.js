@@ -5,7 +5,7 @@ import Button from "./button.js";
 //cards
 export default function Card(props) {
 	return (
-		<div className="card text-center">
+		<div className="card text-center h-100">
 			<img
 				src={
 					"image" in props
@@ -15,7 +15,7 @@ export default function Card(props) {
 				className="card-img-top"
 				alt="..."
 			/>
-			<div className="card-body">
+			<div className="card-body d-flex flex-column">
 				<h5 className="card-title">
 					{"titulo" in props ? props.titulo : "Card Title"}
 				</h5>
@@ -26,7 +26,7 @@ export default function Card(props) {
 				</p>
 				<Button
 					text={props.buttonText}
-					class="primary"
+					class="primary mt-auto"
 					url={"url" in props ? props.url : "#"}
 				/>
 			</div>
