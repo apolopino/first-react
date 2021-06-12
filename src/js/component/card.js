@@ -25,9 +25,7 @@ export default function Card(props) {
 						: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor sapien vitae congue volutpat."}
 				</p>
 				<Button
-					text={
-						"buttonText" in props ? props.buttonText : "Click Here"
-					}
+					text={props.buttonText}
 					class="primary"
 					url={"url" in props ? props.url : "#"}
 				/>

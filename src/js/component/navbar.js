@@ -5,10 +5,10 @@ import PropTypes from "prop-types";
 
 export default function Navbar(props) {
 	return (
-		<nav className={"navbar navbar-expand-lg navbar-dark bg-dark"}>
+		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div className="container d-flex">
 				<a className="navbar-brand" href="#">
-					{props.brand}
+					{"brand" in props ? props.brand : "Brand"}
 				</a>
 				<button
 					className="navbar-toggler"
@@ -24,13 +24,13 @@ export default function Navbar(props) {
 					<ul className="navbar-nav ml-auto">
 						<li className="nav-item active">
 							<a className="nav-link" href="#">
-								{props.home}
+								{"home" in props ? props.home : "Home"}
 								<span className="sr-only">(current)</span>
 							</a>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link" href="#">
-								{props.menu1}
+								{"menu1" in props ? props.menu1 : "Menu1"}
 							</a>
 						</li>
 						<li className="nav-item">
